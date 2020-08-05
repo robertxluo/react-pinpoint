@@ -1,10 +1,11 @@
 {
   "name": "react-pinpoint",
-  "version": "0.0.1-beta.3",
+  "version": "0.0.1",
   "description": "YEAH",
   "main": "src/index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "pub": "npm version patch --force && npm publish"
   },
   "jest": {
     "transform": {
