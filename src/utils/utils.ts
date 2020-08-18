@@ -1,5 +1,6 @@
 let changes = [];
 
+// used for parsing a node to a usable form (with )
 function parseNode(node) {
   return {
     type: node.type,
@@ -23,7 +24,11 @@ function recordChangesToObjField(obj, field) {
   });
 }
 
+// used to take important details of a node and exluce circular references
+// this allows for Puppeteer to stringify the result
 function parseCompletedNode(node) {
+  delete node.child;
+  delete node.sibling;
   return {
     type: node?.type?.name,
     state: node.state,
@@ -68,7 +73,7 @@ function flattenTree(tree) {
   return arr;
 }
 
-function checkTime(fiber: any, threshold: number) {
+function checkTime(fiber, threshold) {
   return fiber.selfBaseDuration > threshold;
 }
 
