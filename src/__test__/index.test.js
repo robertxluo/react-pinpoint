@@ -1,14 +1,5 @@
-// const React = require('react');
-import React from 'react';
-const TestRenderer = require('react-test-renderer');
-const names = require('../index');
-const { mountToReactRoot, getAllSlowComponentRenders, getCircularReplacer } = require('../utils/utils');
-
-describe('all names test', () => {
-  it('expects Robbie, Jeffie, Mattie, Taie, and Shane Allan in the array', () => {
-    expect(['Robbie', 'Jeffie', 'Mattie', 'Taie', 'Shane Allan']).toEqual(expect.arrayContaining(names.all));
-  });
-});
+impot * as testRenderer from 'react-test-renderer';
+import {mountToReactRoot, getAllSlowComponentRenders, getCircularReplacer} from '../utils/utils';
 
 function Link(props) {
   return <a href={props.page}>{props.children}</a>;
