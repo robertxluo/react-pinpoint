@@ -13,7 +13,7 @@
     "check-format": "npm run prettier -- --list-different",
     "validate": "npm-run-all --parallel check-types check-format lint build test",
     "test": "jest",
-    "semantic-release": "semantic-release pre && npm publish"
+    "semantic-release": "semantic-release pre && npm version patch --force && npm publish"
   },
   "repository": {
     "type": "git",
