@@ -54,6 +54,8 @@
     "typescript": "^3.9.7"
   },
   "czConfig": {
-    "path": "node_modules/cz-conventional-changelog"
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
   }
 }
