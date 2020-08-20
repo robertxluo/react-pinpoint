@@ -53,9 +53,9 @@
     "prompt": "^1.0.0",
     "typescript": "^3.9.7"
   },
-  "czConfig": {
+  "config": {
     "commitizen": {
-      "path": "node_modules/cz-conventional-changelog"
+      "path": "cz-conventional-changelog"
     }
   }
 }
