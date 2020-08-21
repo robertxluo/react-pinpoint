@@ -2,7 +2,7 @@
   "name": "react-pinpoint",
   "version": "0.0.0-development",
   "description": "YEAH",
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "scripts": {
     "commit": "git-cz",
     "build": "babel src --extensions .js,.ts,.tsx --out-dir dist",
