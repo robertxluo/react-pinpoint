@@ -1,6 +1,6 @@
 {
   "name": "react-pinpoint",
-  "version": "0.0.0-development",
+  "version": "0.0.0",
   "description": "YEAH",
   "main": "dist/index.js",
   "scripts": {
